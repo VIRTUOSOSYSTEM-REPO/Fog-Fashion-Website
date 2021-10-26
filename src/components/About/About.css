@@ -1,11 +1,10 @@
 .about {
-    min-height: 100vh;
+    /* min-height: 70vh; */
     position: relative;
 }
 
 .about .line-styling{
   position: absolute;
-  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
@@ -79,6 +78,7 @@
     }
 
     .about-img>img {
+      display: none;
         width: 300px;
     } 
 }
@@ -101,7 +101,7 @@
         flex: 0.6;
         box-sizing: border-box;
         /* padding: 5% 10%; */
-        padding: 20px;
+        /* padding: 20px; */
 
     }
 
@@ -153,8 +153,12 @@
     .about-description > p{
       font-size: 0.95rem;
     }
+    .about-img1 > img {
+        width: 200px;
+    }
 
     .about-img > img {
+      display: none;
         width: 200px;
     }
 }

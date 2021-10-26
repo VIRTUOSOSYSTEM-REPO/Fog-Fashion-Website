@@ -74,7 +74,7 @@ function FogWorkshop() {
                         </div> 
 
                         {workshopData.length > 3 && (
-                            <div className="blog--viewAll">
+                            <div className="blog--viewAll index">
                                 <Link to="/blog">
                                     <button className={classes.viewAllBtn}>
                                         View All

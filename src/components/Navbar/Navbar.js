@@ -9,6 +9,7 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import Logo from "../../assets/img/logo/fog.png"
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -133,6 +134,7 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className='navbar--container'>
+            <img className="index" style={{width: "100px"}} src={Logo} alt="logo" />
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
                 </h1>

@@ -15,9 +15,9 @@ function Services() {
             {servicesData.length > 0 && (
                 <div className="services" id="services" style={{backgroundColor:theme.secondary}}>
                     <div className="services-header">
-                        <h1 style={{color: theme.primary}}>What We Do</h1>
+                        <h1 style={{color: theme.primary}}>What We <span style={{color:theme.header}}>Do</span></h1>
                     </div>
-                    <div className="services-body">
+                    <div className="services-body index">
                         {/* <p style={{color:theme.tertiary80}}>
                             These are some of the services I offer. Reach out to me if I can help you with any!
                         </p> */}

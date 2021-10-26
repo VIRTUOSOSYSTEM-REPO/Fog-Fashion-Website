@@ -9,10 +9,13 @@ import { Navbar, Footer, Landing, About, Featured, Skills, Testimonials, Blog, E
 import { headerData } from '../../data/headerData'
 import FogWorkshop from '../../components/Blog/FogWorkshop.js';
 import Head from '../Carousel/Carousel.js';
+import Gallery from '../../components/Gallery/index.js';
+import Gallery1 from '../../components/Gallery1/index.js';
+import UpcomingProject from '../../components/UpcomingProject/UpcomingProject.js';
 
 function Main() {
     return (
-        <div>
+        <div style={{backgroundColor: "black"}}>
 
             <Navbar />
             <Container>
@@ -26,11 +29,12 @@ function Main() {
             <Services />
             <Featured />
             <Skills />
-            <Education />
+            <UpcomingProject />
+            <Gallery1 />
             
-            <Experience />
+            {/* <Experience /> */}
             
-            <Achievement />
+            {/* <Achievement /> */}
             
             <Testimonials />
 

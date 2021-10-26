@@ -2,59 +2,60 @@
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
+import { FcBusinesswoman,FcCamcorderPro,FcCamera, FcSurvey, FcPicture, FcManager, FcEditImage, FcAddImage, FcSelfie, FcNightPortrait, FcClapperboard } from "react-icons/fc";
 import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
 
 export const servicesData = [
     {
         id: 1,
         title: 'FASHION CHOREOGRAPHY',
-        icon: <BiShoppingBag/>
+        icon: <FcClapperboard/>
     },
     {
         id: 2,
         title: 'KIDS FASHION SHOW ',
-        icon: <BiPencil /> 
+        icon: <FcNightPortrait /> 
     },
     {
         id: 3,
         title: 'KIDS FASHION GROOMING ',
-        icon: <AiOutlineMail />
+        icon: <FcSelfie />
     },
     {
         id: 4,
         title: 'MODELING GROOMING ',
-        icon: <FaInternetExplorer />
+        icon: <FcBusinesswoman />
     },
     {
         id: 5,
         title: 'KIDS PORTFOLIO',
-        icon: <FaChalkboardTeacher />
+        icon: <FcPicture />
     },
 
     {
         id: 6,
         title: 'MODELING PORTFOLIO ',
-        icon: <BsCodeSlash />
+        icon: <FcManager />
     },
     {
         id: 7,
         title: 'ECOMMERCE SHOOTS ',
-        icon: <FaCameraRetro />
+        icon: <FcCamera />
     },
     {
         id: 8,
         title: 'MAGAZINE SHOOTS',
-        icon: <FaPinterest />
+        icon: <FcEditImage />
     }, 
     {
         id: 9,
         title: 'CASTING FOR ADS/SHOOTS  ',
-        icon: <FaVideo />
+        icon: <FcCamcorderPro />
     },
     {
         id: 10,
         title: 'MODEL MANAGEMENT ', 
-        icon: <BsClipboardData />
+        icon: <FcSurvey />
     },
     // {
     //     id: 11,

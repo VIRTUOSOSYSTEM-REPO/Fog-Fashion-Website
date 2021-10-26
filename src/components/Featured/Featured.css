@@ -1,5 +1,5 @@
 .about {
-    min-height: 100vh;
+    min-height: 70vh;
     position: relative;
 }
 
@@ -41,6 +41,15 @@
     justify-content: space-around;
     padding-top: 8rem;
     height: fit-content;
+}
+
+.feature-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* padding-top: 8rem; */
+  height: fit-content;
 }
 
 .about-description {
@@ -98,12 +107,25 @@
   }
 
     .about-body {
-        padding-top: 2rem;
+        padding-top: 0rem;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-evenly;
     }
+    .feature-body {
+      padding-top: 0rem;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  }-body {
+      padding-top: 0rem;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  }
 
     .about-description{
         flex: 0.6;

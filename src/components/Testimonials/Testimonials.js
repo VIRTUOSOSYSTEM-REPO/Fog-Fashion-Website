@@ -46,7 +46,7 @@ function Testimonials() {
                     style={{ backgroundColor: theme.primary }}
                 >
                     <div className='testimonials--header'>
-                        <h1 style={{ color: theme.secondary }}>Testimonials</h1>
+                        <h1 style={{ color: theme.secondary }}>TEAM <span style={{ color: theme.header }}>FOG</span></h1>
                     </div>
                     <div className='testimonials--body'>
                         <FaQuoteLeft
@@ -54,7 +54,7 @@ function Testimonials() {
                             style={{ color: theme.secondary }}
                         />
                         <div
-                            className='testimonials--slider'
+                            className='testimonials--slider index'
                             style={{ backgroundColor: theme.primary }}
                         >
                             <Slider {...settings} ref={sliderRef}>
@@ -69,9 +69,11 @@ function Testimonials() {
                                                 style={{
                                                     backgroundColor:
                                                         theme.secondary,
+                                                        borderRadius: "68px"
                                                 }}
                                             >
-                                                <img
+                                                <img style={{
+                                                    borderRadius: "68px"}}
                                                     src={test.image}
                                                     alt={test.name}
                                                 />
@@ -84,9 +86,9 @@ function Testimonials() {
                                                     color: theme.tertiary,
                                                 }}
                                             >
-                                                <p>{test.text}</p>
+                                                {/* <p>{test.text}</p> */}
                                                 <h1>{test.name}</h1>
-                                                <h4>{test.title}</h4>
+                                                {/* <h4>{test.title}</h4> */}
                                             </div>
                                         </div>
                                     </div>
