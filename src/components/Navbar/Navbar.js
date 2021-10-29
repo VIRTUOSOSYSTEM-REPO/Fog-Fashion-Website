@@ -133,7 +133,7 @@ function Navbar() {
 
     return (
         <div className='navbar scroll'>
-            <div className='navbar--container'>
+            <div style={{paddingTop: "100px"}} className='navbar--container'>
             <img className="index" style={{width: "100px"}} src={Logo} alt="logo" />
                 <a style={{ fontFamily: 'var(--primaryFont)' }} href='/#about'>
                 <h1  className="index" style={{ color: theme.header, fontFamily: 'var(--primaryFont)' }}>
