@@ -15,10 +15,11 @@ import team4 from "../assets/img/team/team3.jpg"
 export const testimonialsData = [
     {
         id: 1,
-        name: 'ASHISH',
-        title: 'Transponster',
-        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
-        image: team1
+        name: 'MANISH DEV',
+        title: 'Massuese',
+        text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
+        image: team3
+
     },
     {
         id: 2,
@@ -29,10 +30,11 @@ export const testimonialsData = [
     },
     {
         id: 3,
-        name: 'MANISH DEV',
-        title: 'Massuese',
-        text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
-        image: team3
+        name: 'ASHISH',
+        title: 'Transponster',
+        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
+        image: team1
+
     },
     {
         id: 4,
