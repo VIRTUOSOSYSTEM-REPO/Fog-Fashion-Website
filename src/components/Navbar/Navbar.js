@@ -33,12 +33,12 @@ function Navbar() {
     const useStyles = makeStyles((t) => ({
         navMenu: {
             fontSize: '2.5rem',
-            color: theme.tertiary,
+            color: theme.header,
             cursor: 'pointer',
             transform: 'translateY(-10px)',
             transition: 'color 0.3s',
             '&:hover': {
-                color: theme.primary,
+                color: theme.head,
             },
             [t.breakpoints.down('sm')]: {
                 fontSize: '2.5rem',
@@ -66,7 +66,7 @@ function Navbar() {
             fontSize: '2rem',
             fontWeight: 'bold',
             cursor: 'pointer',
-            color: theme.primary,
+            color: theme.header,
             position: 'absolute',
             right: 40,
             top: 40,
@@ -83,7 +83,7 @@ function Navbar() {
             margin: '2rem auto',
             borderRadius: '78.8418px',
             background: theme.secondary,
-            color: theme.primary,
+            color: theme.header,
             width: '85%',
             height: '60px',
             display: 'flex',
@@ -92,7 +92,7 @@ function Navbar() {
             padding: '0 30px',
             boxSizing: 'border-box',
             border: '2px solid',
-            borderColor: theme.primary,
+            borderColor: theme.header,
             transition: 'background-color 0.2s, color 0.2s',
             '&:hover': {
                 background: theme.primary,
@@ -132,15 +132,16 @@ function Navbar() {
     };
 
     return (
-        <div className='navbar'>
+        <div className='navbar scroll'>
             <div className='navbar--container'>
             <img className="index" style={{width: "100px"}} src={Logo} alt="logo" />
-                <h1 style={{ color: theme.secondary }}>
+                <a style={{ fontFamily: 'var(--primaryFont)' }} href='/#about'>
+                <h1  className="index" style={{ color: theme.header, fontFamily: 'var(--primaryFont)' }}>
                     {shortname(headerData.name)}
                 </h1>
-
+                </a>
                 <IoMenuSharp
-                    className={classes.navMenu}
+                    className={classes.navMenu }
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
                 />
@@ -225,7 +226,24 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                       Projects
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+                        <Fade left>
+                            <NavLink
+                                to='/#gallery'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaFolderOpen
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                       Gallery
                                     </span>
                                 </div>
                             </NavLink>
@@ -261,7 +279,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Blog
+                                       Workshop
                                     </span>
                                 </div>
                             </NavLink>

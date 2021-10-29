@@ -13,7 +13,7 @@ function Gallery1() {
   const { theme } = useContext(ThemeContext);
    
     return (
-        <Container className="About-header" fluid={true}>
+        <Container id="gallery" className="About-header" fluid={true}>
                       <div className="services-header">
                         <h1 style={{color: theme.white}} >Our <span style={{color: theme.header}}>Events</span></h1>
                     </div>

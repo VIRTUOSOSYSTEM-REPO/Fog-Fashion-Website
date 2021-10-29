@@ -31,7 +31,7 @@ function BackToTop() {
     const useStyles = makeStyles(() => ({
         icon: {
             fontSize: '3rem',
-            color: theme.tertiary,
+            color: theme.header,
         },
     }));
 
@@ -40,7 +40,7 @@ function BackToTop() {
     return (
         <div
             style={{ display: visible ? 'inline' : 'none' }}
-            className='backToTop'
+            className='backToTop index'
         >
             <button onClick={scrollToTop} aria-label='Back to top'>
                 <IoIosArrowDropupCircle className={classes.icon} />
