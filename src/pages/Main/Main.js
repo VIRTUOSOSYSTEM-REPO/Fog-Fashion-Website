@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import Animate from 'react-smooth';
 import Particles from 'react-particles-js';
 import particles from '../../Const/particle.js';
-import { Navbar, Footer, Landing, About, Featured, Skills, Testimonials, Blog, Education, Experience, Contacts, Projects, Services, Achievement } from '../../components'
+import { Navbar, Footer,  About, Featured, Skills, Testimonials, Contacts, Services } from '../../components'
 import { headerData } from '../../data/headerData'
 import FogWorkshop from '../../components/Blog/FogWorkshop.js';
 import Head from '../Carousel/Carousel.js';
