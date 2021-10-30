@@ -17,9 +17,10 @@ function Main() {
     return (
         <div style={{backgroundColor: "black"}}>
 
-            <Navbar />
+            
             <Container>
 				<Row>
+                <Navbar />
             <Head />
             </Row>
 			</Container>
