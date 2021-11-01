@@ -12,18 +12,20 @@ import Head from '../Carousel/Carousel.js';
 import Gallery from '../../components/Gallery/index.js';
 import Gallery1 from '../../components/Gallery1/index.js';
 import UpcomingProject from '../../components/UpcomingProject/UpcomingProject.js';
+import Navigation from '../../components/Navigation/Navigation.js';
 
 function Main() {
     return (
         <div style={{backgroundColor: "black"}}>
 
-            
-            <Container>
+<Navigation />
+            {/* <Container> */}
 				<Row>
-                <Navbar />
+                    
+                {/* <Navbar /> */}
             <Head />
             </Row>
-			</Container>
+			{/* </Container> */}
             {/* <Landing /> */}
             {/* </Animate> */}
             <About />

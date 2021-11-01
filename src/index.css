@@ -140,6 +140,9 @@ svg{
   .card_col {
     padding-left: 11% !important;
   } 
+  .navclass {
+    float: right !important;
+  }
   
 }
 
@@ -148,6 +151,9 @@ svg{
     body {
       background-color: black;
       overflow-x: hidden;
+    }
+    .navclass {
+      display: none;
     }
 }
 

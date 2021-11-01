@@ -375,5 +375,5 @@ export const blackThemeDark = {
     eduimg: eduYellow,
     expimg: expYellow,
     contactsimg: contactsYellow,
-    header: '#FDBC00',
+    header: '#F30200',
 }

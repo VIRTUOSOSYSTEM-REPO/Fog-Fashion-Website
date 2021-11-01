@@ -23,6 +23,7 @@ const Head = () => {
 	return (
 		<div className="index">
 		<CarouselDiv id="top" interval="2000" indicators="false">
+			
 			<CarouselItemDiv>
 				<img
 					className="d-block w-100 index"
