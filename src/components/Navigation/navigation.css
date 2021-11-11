@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   color: #ffdd40;
-  border: 1px solid #0045FE;
+  border: 1px solid #ffdd40;
   z-index: 3000;
 }
 
@@ -73,9 +73,7 @@
   color: #ffdd40;
   border: 1px solid #ffdd40;
 }
-.nav>li {
-  position: relative;
-}
+
 .nav-icon {
   display: none;
 }

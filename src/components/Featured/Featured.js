@@ -15,8 +15,8 @@ function Featured() {
         <div className="about" id="about" style={{backgroundColor: theme.secondary}}>
            
 
-            <div className="services-header">
-                        <h1 style={{color: theme.header}}>Featured</h1>
+            <div>
+                        <h1 className="services-header" style={{color: theme.header}}>Featured</h1>
                     </div>
             <div className="about-body index">
                 <div className="about-img1 index">

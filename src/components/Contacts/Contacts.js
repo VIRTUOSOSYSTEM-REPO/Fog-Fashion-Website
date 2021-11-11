@@ -160,7 +160,7 @@ function Contacts() {
             style={{ backgroundColor: theme.secondary }}
         >
             <div className='contacts--container'>
-                <h1 style={{ color: theme.primary }}>Contacts</h1>
+                <h1 style={{ color: theme.primary }}>For Registration</h1>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
                         <form onSubmit={handleContactForm}>
@@ -169,7 +169,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
-                                    placeholder='John Doe'
+                                    placeholder='Manish Dev'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -185,7 +185,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
-                                    placeholder='John@doe.com'
+                                    placeholder='fogfashion@gmail.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
@@ -350,11 +350,11 @@ function Contacts() {
                     </div>
                 </div>
             </div>
-            <img
+            {/* <img
                 src={theme.contactsimg}
                 alt='contacts'
                 className='contacts--img'
-            />
+            /> */}
         </div>
     );
 }

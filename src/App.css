@@ -1,5 +1,6 @@
 :root {
-    --primaryFont: 'Poppins', sans-serif;
+    --primaryFont: 'Lora';
+    --headerFont: 'Lucida Calligraphy'
     /* --primaryFont: 'Montserrat', sans-serif; */
     /* --primaryFont: 'Raleway', sans-serif; */
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Helmet } from 'react-helmet'
 import Animate from 'react-smooth';
@@ -13,12 +12,14 @@ import Gallery from '../../components/Gallery/index.js';
 import Gallery1 from '../../components/Gallery1/index.js';
 import UpcomingProject from '../../components/UpcomingProject/UpcomingProject.js';
 import Navigation from '../../components/Navigation/Navigation.js';
+import Payment from '../../components/Payment/Payment.js';
+import WhatsApp from '../WhatsApp/WhatsApp.js';
 
 function Main() {
     return (
         <div style={{backgroundColor: "black"}}>
-
 <Navigation />
+<WhatsApp />
             {/* <Container> */}
 				<Row>
                     
@@ -42,6 +43,7 @@ function Main() {
             <Testimonials />
 
             <FogWorkshop />
+            <Payment />
             <Contacts />
             <Footer />
         </div>

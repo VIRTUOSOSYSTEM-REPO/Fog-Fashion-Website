@@ -141,7 +141,7 @@ function Navigation() {
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             FOG FASHION
-            <i className="fas fa-code"></i>
+            {/* <i className="fas fa-code"></i> */}
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
