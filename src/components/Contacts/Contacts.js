@@ -9,6 +9,7 @@ import {
     FaLinkedinIn,
     FaYoutube,
     FaInstagram,
+    FaFacebook,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -65,7 +66,6 @@ function Contacts() {
         },
         label: {
             backgroundColor: `${theme.secondary}`,
-            color: `${theme.primary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 600,
             fontSize: '0.9rem',
@@ -82,7 +82,7 @@ function Contacts() {
             justifyContent: 'center',
             fontSize: '21px',
             backgroundColor: theme.primary,
-            color: theme.secondary,
+            // color: theme.secondary,
             transition: '250ms ease-in-out',
             '&:hover': {
                 transform: 'scale(1.1)',
@@ -278,7 +278,7 @@ function Contacts() {
                             href={`mailto:${contactsData.email}`}
                             className='personal-details'
                         >
-                            <div className={classes.detailsIcon}>
+                            <div style={{color: theme.fogYellow }} className={classes.detailsIcon}>
                                 <FiAtSign />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -289,7 +289,7 @@ function Contacts() {
                             href={`tel:${contactsData.phone}`}
                             className='personal-details'
                         >
-                            <div className={classes.detailsIcon}>
+                            <div style={{color: theme.fogYellow }} className={classes.detailsIcon}>
                                 <FiPhone />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -297,7 +297,7 @@ function Contacts() {
                             </p>
                         </a>
                         <div className='personal-details'>
-                            <div className={classes.detailsIcon}>
+                            <div style={{color: theme.fogYellow }} className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -321,9 +321,10 @@ function Contacts() {
                                     href={socialsData.linkedIn}
                                     target='_blank'
                                     rel='noreferrer'
+                                    style={{color: theme.facebookColor }}
                                     className={classes.socialIcon}
                                 >
-                                    <FaLinkedinIn aria-label='LinkedIn' />
+                                    <FaFacebook aria-label='LinkedIn' />
                                 </a>
                             )}
                             {socialsData.instagram && (
@@ -331,6 +332,7 @@ function Contacts() {
                                     href={socialsData.instagram}
                                     target='_blank'
                                     rel='noreferrer'
+                                    style={{color: theme.instaColor }}
                                     className={classes.socialIcon}
                                 >
                                     <FaInstagram aria-label='Instagram' />
@@ -341,6 +343,7 @@ function Contacts() {
                                     href={socialsData.youtube}
                                     target='_blank'
                                     rel='noreferrer'
+                                    style={{color: theme.youtubeColor }}
                                     className={classes.socialIcon}
                                 >
                                     <FaYoutube aria-label='YouTube' />

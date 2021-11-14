@@ -19,6 +19,7 @@ function UpcomingProject() {
                     {educationData.map(edu => (
                         <EducationCard 
                             key={edu.id}
+                            link={edu.link}
                             id={edu.id}
                             institution={edu.institution}
                             course={edu.course}

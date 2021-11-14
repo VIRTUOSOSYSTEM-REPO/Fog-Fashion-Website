@@ -8,6 +8,10 @@ import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 
 import './App.css'
+import Event1 from './pages/Upcoming/Event1';
+import Event2 from './pages/Upcoming/Event2';
+import Event3 from './pages/Upcoming/Event3';
+import Event4 from './pages/Upcoming/Event4';
 
 function App() {
 
@@ -24,6 +28,10 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/blog" exact component={BlogPage} />
+          <Route path="/Event1" exact component={Event1} />
+          <Route path="/Event2" exact component={Event2} />
+          <Route path="/Event3" exact component={Event3} />
+          <Route path="/Event4" exact component={Event4} />
           <Route path="/projects" exact component={ProjectPage} />
 
           <Redirect to="/" />

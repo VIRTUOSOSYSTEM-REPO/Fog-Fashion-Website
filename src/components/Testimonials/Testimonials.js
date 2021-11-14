@@ -87,8 +87,8 @@ function Testimonials() {
                                                 }}
                                             >
                                                 {/* <p>{test.text}</p> */}
-                                                <h1>{test.name}</h1>
-                                                {/* <h4>{test.title}</h4> */}
+                                                <h1 style={{ color: theme.fogYellow }}>{test.name}</h1>
+                                                <h4>{test.title}</h4>
                                             </div>
                                         </div>
                                     </div>

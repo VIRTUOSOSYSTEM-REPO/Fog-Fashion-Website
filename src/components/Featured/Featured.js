@@ -16,7 +16,7 @@ function Featured() {
            
 
             <div>
-                        <h1 className="services-header" style={{color: theme.header}}>Featured</h1>
+                        <h1 className="services-header" style={{color: theme.fogYellow}}>Featured</h1>
                     </div>
             <div className="about-body index">
                 <div className="about-img1 index">
@@ -25,9 +25,9 @@ function Featured() {
                         alt="" 
                     />
                 </div>
-                <div className="about-description">
-                    <h1 style={{color: theme.header}}>{featuredData.label}</h1>
-                    <h2 style={{color: theme.primary}}>{featuredData.title}</h2>
+                <div className="about-description ">
+                    <h1 className="gradient">{featuredData.label}</h1>
+                    <h2 style={{color: theme.fogYellow}}>{featuredData.title}</h2>
                     <p style={{color:theme.tertiary80}}>{featuredData.description}<br/><br/>{featuredData.description1}<br/><br/>{featuredData.description2}</p>
                 </div>
             </div>

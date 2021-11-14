@@ -16,7 +16,7 @@ export const testimonialsData = [
     {
         id: 1,
         name: 'MANISH DEV',
-        title: 'Massuese',
+        title: 'FOUNDER & CEO',
         text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
         image: team3
 
@@ -24,14 +24,14 @@ export const testimonialsData = [
     {
         id: 2,
         name: 'SUVIRAJ',
-        title: 'Head Chef',
+        title: 'CO-FOUNDER',
         text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
         image: team2
     },
     {
         id: 3,
         name: 'ASHISH',
-        title: 'Transponster',
+        title: 'HEAD QATAR',
         text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
         image: team1
 
@@ -39,7 +39,7 @@ export const testimonialsData = [
     {
         id: 4,
         name: 'SUHAS',
-        title: 'Actor',
+        title: 'HEAD DUBAI',
         text: "Making my portfolio with this helped me get my role as 'Dr. Drake Ramoray' in 'Days Of Our Lives'. You guys are the best !",
         image: team4
     },

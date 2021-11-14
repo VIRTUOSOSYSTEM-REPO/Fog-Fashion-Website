@@ -12,7 +12,6 @@ import Gallery from '../../components/Gallery/index.js';
 import Gallery1 from '../../components/Gallery1/index.js';
 import UpcomingProject from '../../components/UpcomingProject/UpcomingProject.js';
 import Navigation from '../../components/Navigation/Navigation.js';
-import Payment from '../../components/Payment/Payment.js';
 import WhatsApp from '../WhatsApp/WhatsApp.js';
 
 function Main() {
@@ -43,7 +42,6 @@ function Main() {
             <Testimonials />
 
             <FogWorkshop />
-            <Payment />
             <Contacts />
             <Footer />
         </div>

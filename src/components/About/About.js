@@ -19,7 +19,7 @@ function About() {
             </div>
             <div className="about-body index">
                 <div className="about-description">
-                    <h2 style={{color: theme.primary}}>ASTOUNDING FACTS ABOUT <span style={{color: theme.header}}>FOG FASHION </span> STUDIO</h2>
+                    <h2 style={{color: theme.fogYellow}}>ASTOUNDING FACTS ABOUT <span style={{color: theme.header}}>FOG FASHION </span> STUDIO</h2>
                     <p style={{color:theme.tertiary80}}>{aboutData.description}<br/><br/><span style={{fontWeight: "bold" }}>Fog Fashion Studio </span> {aboutData.description1}<br/><br/><span style={{fontWeight: "bold" }}>Fog Fashion Studio </span> {aboutData.description2}</p>
                 </div>
                 <div className="about-img">

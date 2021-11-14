@@ -133,11 +133,30 @@ function Navigation() {
         }
     };
   const [click, setClick] = useState(false);
+  const [visible, setVisible] = useState(false);
+ 
+
+  const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 950) {
+          setVisible(true);
+      } else if (scrolled <= 950) {
+          setVisible(false);
+      }
+  };
+  const scrollToTop = () => {
+    setVisible(false);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+};
+  window.addEventListener('scroll', toggleVisible, scrollToTop );
 
   const handleClick = () => setClick(!click);
   return (
     <>
-      <nav className="navbar " style={{zIndex: "2000"}}>
+      <nav className="navbar "   style={{ backgroundColor: visible ? '#FFFF' : '', zIndex: "2000",  color: visible ? '#F5B921' : '#F5B921' }}>
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             FOG FASHION
@@ -150,6 +169,7 @@ function Navigation() {
                 exact
                 to='/#about'
                 activeClassName="active"
+                style={{color: visible ? '#F70000' : '#F5B921' }}
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -160,6 +180,7 @@ function Navigation() {
               <NavLink
                 exact
                 to='/#gallery'
+                style={{color: visible ? '#F70000' : '#F5B921' }}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -171,9 +192,11 @@ function Navigation() {
               <NavLink
                 exact
                 to='/#services'
+                style={{color: visible ? '#F70000' : '#F5B921' }}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
+
               >
                 Services
               </NavLink>
@@ -182,6 +205,7 @@ function Navigation() {
               <NavLink
                 exact
                 to='/#contacts'
+                style={{color: visible ? '#F70000' : '#F5B921' }}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -195,9 +219,9 @@ function Navigation() {
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
                 />
-          <div className="nav-icon" onClick={handleClick}>
+          {/* <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
+          </div> */}
         </div>
       </nav>
       <Drawer

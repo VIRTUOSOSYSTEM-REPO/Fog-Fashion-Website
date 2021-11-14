@@ -7,6 +7,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
+  --text-blue: #0053de4d;
   --hue-color: 206;
   --black-color: hsl(var(--hue-color), 4%, 4%);
   --black-color-alt: hsl(var(--hue-color), 4%, 8%);
@@ -15,8 +16,8 @@
   --text-color-light: hsl(var(--hue-color), 4%, 65%);
   --white-color: rgb(255, 0, 0);
   --body-color: hsl(var(--hue-color), 4%, 6%);
-  --container-color: hsl(var(--hue-color), 4%, 10%);
-  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+  --container-color: hsl(var(--white-color), 4%, 10%);
+  --text-gradient: linear-gradient(hsl(var( --white-color), 4%, 24%), hsl(var(--text-blue), 4%, 8%));
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
@@ -134,9 +135,9 @@ img{
             user-select: none; 
 
 }
-svg{
+/* svg{
   color: #FDBC00;
-}
+} */
 .svg .hover {
   color: #ffffff;
 }
@@ -171,4 +172,9 @@ svg{
 
 .index {
   z-index: 1000 !important;
+}
+.gradient {
+  background: linear-gradient(to right, #355fd7 0%, #d24ce9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
